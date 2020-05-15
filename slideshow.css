@@ -1,0 +1,84 @@
+/* Method based on Mark Lee's tutorial at TheMarkLee.com
+/2013/10/16/simple-crossfading-slideshow-css */
+
+.slidebox {
+  background-color:#EDD7B4;
+  border-radius:10px;
+  height:250px;
+  position:relative;
+  width:300px;
+}
+
+.slidebox img {
+  border-radius:10px;
+  left:50%;
+  max-height:200px;
+  max-width:400px;
+  position:absolute;
+  top:50%;
+  transform: translate(-50%, -50%);
+}
+
+.slidebox figcaption {
+  color:#53643D;
+  font-size:90%;
+  font-weight:bold;
+  margin:0 auto;
+  padding-top:0;
+  text-align:center;
+  width:90%;  
+}
+
+@keyframes imgFade {
+    0% {opacity:1;}
+   17% {opacity:1;}
+   25% {opacity:0;}
+   92% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes imgFade {
+    0% {opacity:1;}
+   17% {opacity:1;}
+   25% {opacity:0;}
+   92% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes imgFade {
+    0% {opacity:1;}
+   17% {opacity:1;}
+   25% {opacity:0;}
+   92% {opacity:0;}
+  100% {opacity:1;}
+}
+
+.slidebox img {
+	-webkit-animation:imgFade ease-in-out infinite 16s;
+    -moz-animation:imgFade ease-in-out infinite 16s;
+    animation-name:imgFade ease-in-out infinite 16s;
+}
+
+
+.slidebox img:nth-of-type(1) {
+  -webkit-animation-delay: 12s;
+  -moz-animation-delay: 12s;
+  animation-delay: 12s;
+}
+.slidebox img:nth-of-type(2) {
+  -webkit-animation-delay: 8s;
+  -moz-animation-delay: 8s;
+  animation-delay: 8s;
+}
+
+.slidebox img:nth-of-type(3) {
+  -webkit-animation-delay: 4s;
+  -moz-animation-delay: 4s;
+  animation-delay: 4s;
+}
+.slidebox img:nth-of-type(4) {
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  animation-delay: 0s;
+}
+

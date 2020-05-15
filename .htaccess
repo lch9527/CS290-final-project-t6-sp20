@@ -1,0 +1,5 @@
+ErrorDocument 400 http://web.engr.oregonstate.edu/~gaoyu/oregon-state-martial-arts-alliance/
+ErrorDocument 401 http://web.engr.oregonstate.edu/~gaoyu/oregon-state-martial-arts-alliance/
+ErrorDocument 403 http://web.engr.oregonstate.edu/~gaoyu/oregon-state-martial-arts-alliance/
+ErrorDocument 404 http://web.engr.oregonstate.edu/~gaoyu/oregon-state-martial-arts-alliance/
+ErrorDocument 500 http://web.engr.oregonstate.edu/~gaoyu/oregon-state-martial-arts-alliance/
