@@ -1,0 +1,137 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fcf8f5;
+}
+
+a{
+    text-decoration: none;
+}
+.header {
+    background-color: #fcf8f5;
+    height: 80px;
+    margin: 0px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.header .navlist{
+    float: left;
+    list-style-type: none;
+    margin: 0px;
+    padding-left: 40px;
+}
+
+.navlist li{
+    float: left;
+    line-height: 80px;
+    padding-right: 40px;
+    font-family: Georgia, serif;
+}
+
+.navlist .active a{
+    color: #fccb96;
+}
+
+.navlist a{
+    color: #130d4c;
+}
+
+.navlist a:hover{
+    color: #fccb96;
+}
+
+.header .medialist{
+    float: right;
+    list-style-type: none;
+    margin: 0px;
+    padding-right: 20px;
+}
+
+.medialist li{
+    float: left;
+    line-height: 80px;
+    padding-right: 30px;
+}
+
+.title{
+    background-color: #fccb96;
+    height: 80px;
+    color: #130d4c;
+} 
+
+.title h1{
+    margin: 0px;
+    line-height: 80px;
+    text-align: center;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+.container .picture{
+    width: 100%;
+}
+
+.picContainer{
+    display: flex;
+}
+
+.picContainer .pict{
+    width: 100%;
+    cursor: pointer;
+}
+
+.break{
+    height: 100px;
+}
+
+hr{
+    width: 10%;
+}
+
+.classes,
+.about-us{
+    width: 60%;
+    height: 300px;
+    margin: auto;
+    background-color: white;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.classContainer{
+    display: flex;
+    padding: 0px 40px;
+}
+
+.classContainer .block{
+    height: 300px;
+    width: 100%;
+    background-color: #fccb96;
+    text-align: center;
+}
+
+.one{
+    border-right: 1px #130d4c solid;
+}
+
+.contact{
+    background-color: #130d4c;
+    height: 300px;
+    display: flex;
+    padding: 120px 0px;
+    
+}
+
+.Part{
+    width: 100%;
+    color: white;
+    padding-left: 100px;
+}
+
+.firstPart{
+    border-right: 1px #fccb96 solid;
+}
