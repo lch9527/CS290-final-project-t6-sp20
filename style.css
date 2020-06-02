@@ -135,3 +135,41 @@ hr{
 .firstPart{
     border-right: 1px #fccb96 solid;
 }
+/*********HERO IMG HERE***********************************************/
+.hero-image{
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(neuroscience-banner.jpg);
+	height:50%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	
+}
+.hero-text{
+	text-align: left;
+	position: absolute;
+	top: 30%;
+	left: 25%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+	.fifty  {width:50%;}/*more of percentages*/
+	.thirty {width:30%;}
+	.sixty  {width:60%;}
+	.eighty {width:80%;}
+	
+/*********HERO IMG OVER***********************************************/
+/*************discussion page style HERE***************************/
+
+/*************discussion page style OVER***************************/
+@media all and (min-width: 800px) {  /*TABLET ========================*/
+	h1 {font-size:300%;}
+	h2 {font-size:250%;}
+	h3 {font-size:200%;}
+	h4 {font-size:150%;}
+	h5 {font-size:125%;}
+	h6 {font-size:100%;}
+}
+@media all and (min-width: 1260px) {  /*DESKTOP ======================*/
+
+}
