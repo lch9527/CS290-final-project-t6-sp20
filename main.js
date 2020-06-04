@@ -7,6 +7,7 @@
 var header = document.querySelector(".header");
 var sticky = header.offsetTop;
 
+
 window.onscroll = function () {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
@@ -28,3 +29,4 @@ function showPic(n) {
   }
   x[index - 1].style.display = "block";
 }
+
