@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Neuro Zoom: Class</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" crossorigin="anonymous">
+  <script src="discussion.js" charset="utf-8" defer></script>
+  <link rel="stylesheet" href="style.css" type="text/css">
+
+</head>
+
+<body>
+  <div class="title">
+
+    <h1>Let's Discuss</h1>
+
+    <ul class="medialist">
+      <li class="media"><i class="fab fa-weixin"></i></li>
+      <li class="media"><i class="fab fa-weibo"></i></li>
+      <li class="media"><i class="fab fa-facebook-f"></i></li>
+    </ul>
+  </div>
+
+  <div class="header" id="myHeader">
+    <ul class="navlist">
+      <li class="navitem navlink"><a href="../main.html">Home</a></li>
+      <li class="navitem navlink"><a href="../Class/class.html">Classes</a></li>
+      <li class="navitem navlink active"><a href="discussion.html">Discussion</a></li>
+      <li class="navitem navlink"><a href="../Article/article.html">Article</a></li>
+      <li class="navitem navbar-search">
+        <button type="button" id="create-dis-button"><img class="dis-img" src="./DiscussionImage/brain.png"
+            alt="brain logo" width="40"></button>
+        <!-- <input type="text" id="search-input" placeholder="Search...">
+        <button type="button" id="search-button"><i class="fas fa-search"></i></button> -->
+      </li>
+    </ul>
+  </div>
+
+  <div id="modal-backdrop" class="hidden"></div>
+  <div id="create-dis" class="hidden">
+    <div class="modal-dialog">
+
+      <div class="m-header">
+        <h5>Share your thoughts</h5>
+        <button type="button" class="m-close">&times;</button>
+      </div>
+
+      <div class="m-body">
+        <div class="dis-elements">
+          <label for="dis-text-input">Content</label>
+          <textarea id="dis-text-input"></textarea>
+        </div>
+        <div class="dis-elements">
+          <label for="dis-stu">Name</label>
+          <input type="text" id="dis-stu">
+        </div>
+      </div>
+
+      <div class="m-footer">
+        <button type="button" class="m-cancel">Cancel</button>
+        <button type="button" class="m-create">Create Discussion</button>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1>Discussion</h1>
+      <p>
+        Show us what you learned,
+        ask questions and expanding your thoughts
+      </p>
+    </div>
+  </div>
+
+  <div class="break"></div>
+  <div class="break"></div>
+  <div class="break"></div>
+
+  <div class="aboutDis">
+    <h2>About Disucssion</h2>
+    <br>
+    <p>
+      Discussion is important to
+      learning in all disciplines
+      because it helps students
+      process information rather
+      than simply receive it.
+      Leading a discussion requires
+      skills different from lecturing.
+      The goal of a discussion is to
+      get students to practice thinking
+      about the course material.
+      (<a
+        href="https://citl.indiana.edu/teaching-resources/teaching-strategies/discussions/index.html#:~:text=Discussion%20is%20important%20to%20learning,thinking%20about%20the%20course%20material.">source</a>)
+    </p>
+  </div>
+
+  <div class="break"></div>
+  <div class="break"></div>
+  <div class="break"></div>
+  <div class="head-container">
+    <div class="classBox">
+      <p class="class-name">
+        <a href="https://www.coursera.org/learn/neurobiology " , target="_blank">Understanding the Brain: The
+          Neurobiology of
+          Everyday Life</a>
+      </p>
+      <p class="class-text">
+        Learn how the nervous
+        system produces behavior,
+        how we use our brain every
+        day, and how neuroscience can
+        explain the common problems
+        afflicting people today. We
+        will study functional human
+        neuroanatomy and neuronal
+        communication, and then use
+        this information to understand
+        how we perceive the outside
+        world, move our bodies
+        voluntarily, stay alive,
+        and play well with others.
+
+      </p>
+      <p class="class-univ">The University of Chicago</p>
+    </div>
+
+    <img class="classBoxImage" src="./DiscussionImage/discussion-3.jpg" alt="">
+  </div>
+
+  <div class="break"></div>
+  <div class="break"></div>
+  <div class="break"></div>
+
+  <main class="disContainer">
+
+    <article class="dis">
+      <div class="dis-icon">
+        <img class="dis-img" src="./DiscussionImage/brain.png" alt="brain logo" width="30">
+      </div>
+      <div class="dis-content">
+        <p class="dis-text">
+          Neuroscience is geared
+          toward K-12 students,
+          this initiative incorporates
+          unusual and fun facts about
+          the brain and nervous system
+          to attract the attention of
+          young minds and help shape
+          a lifelong interest in and
+          commitment to the
+          neuroscience field.
+        </p>
+        <p class="dis-st">
+          Mick
+        </p>
+
+      </div>
+    </article>
+
+    <article class="dis">
+      <div class="dis-icon">
+        <img class="dis-img" src="./DiscussionImage/brain.png" alt="brain logo" width="30">
+      </div>
+      <div class="dis-content">
+        <p class="dis-text">
+          Neuroscience is designed
+          to increase awareness
+          of the impact that
+          neuroscience has on
+          the prevention, diagnosis,
+          and treatment of as many
+          as 600 known types of
+          brain diseases, this
+          initiative works to
+          inspire medical students
+          to select a career in
+          neurology.
+        </p>
+        <p class="dis-st">
+          Jack
+        </p>
+
+      </div>
+    </article>
+
+    <article class="dis">
+      <div class="dis-icon">
+        <img class="dis-img" src="./DiscussionImage/brain.png" alt="brain logo" width="30">
+      </div>
+      <div class="dis-content">
+        <p class="dis-text">
+          Neuroscience initiative
+          speaks to practicing
+          neurologists and other
+          neuroscience professionals
+          by using compelling facts
+          to demonstrate how
+          research is critical
+          to patient care and
+          day-to-day practice.
+        </p>
+        <p class="dis-st">
+          Sam
+        </p>
+      </div>
+    </article>
+
+    <article class="dis">
+      <div class="dis-icon">
+        <img class="dis-img" src="./DiscussionImage/brain.png" alt="brain logo" width="30">
+      </div>
+      <div class="dis-content">
+        <p class="dis-text">
+          Without support from
+          government agencies,
+          industry, and the general
+          public, there is not
+          enough funding to sustain
+          neuroscience research.
+          Without research, there are
+          no treatments. And without
+          treatments, there are no
+          cures. This initiative
+          raises awareness of the
+          American Academy of
+          Neurology's support of
+          researchers and access to
+          practitioners to conduct
+          trials and trial recruitment.
+        </p>
+        <p class="dis-st">
+          Jackson
+        </p>
+      </div>
+    </article>
+
+    <article class="dis">
+      <div class="dis-icon">
+        <img class="dis-img" src="./DiscussionImage/brain.png" alt="brain logo" width="30">
+      </div>
+      <div class="dis-content">
+        <p class="dis-text">
+          Neuroscience is hard
+        </p>
+        <p class="dis-st">
+          Justin
+        </p>
+      </div>
+    </article>
+    <article class="dis">
+      <div class="dis-icon">
+        <img class="dis-img" src="./DiscussionImage/brain.png" alt="brain logo" width="30">
+      </div>
+      <div class="dis-content">
+        <p class="dis-text">
+          Neuroscience is geared
+          toward K-12 students,
+          this initiative incorporates
+          unusual and fun facts about
+          the brain and nervous system
+          to attract the attention of
+          young minds and help shape
+          a lifelong interest in and
+          commitment to the
+          neuroscience field.
+        </p>
+        <p class="dis-st">
+          Mick
+        </p>
+
+      </div>
+    </article>
+
+    <article class="dis">
+      <div class="dis-icon">
+        <img class="dis-img" src="./DiscussionImage/brain.png" alt="brain logo" width="30">
+      </div>
+      <div class="dis-content">
+        <p class="dis-text">
+          Neuroscience is designed
+          to increase awareness
+          of the impact that
+          neuroscience has on
+          the prevention, diagnosis,
+          and treatment of as many
+          as 600 known types of
+          brain diseases, this
+          initiative works to
+          inspire medical students
+          to select a career in
+          neurology.
+        </p>
+        <p class="dis-st">
+          Jack
+        </p>
+
+      </div>
+    </article>
+
+    <article class="dis">
+      <div class="dis-icon">
+        <img class="dis-img" src="./DiscussionImage/brain.png" alt="brain logo" width="30">
+      </div>
+      <div class="dis-content">
+        <p class="dis-text">
+          Neuroscience initiative
+          speaks to practicing
+          neurologists and other
+          neuroscience professionals
+          by using compelling facts
+          to demonstrate how
+          research is critical
+          to patient care and
+          day-to-day practice.
+        </p>
+        <p class="dis-st">
+          Sam
+        </p>
+      </div>
+    </article>
+
+    <article class="dis">
+      <div class="dis-icon">
+        <img class="dis-img" src="./DiscussionImage/brain.png" alt="brain logo" width="30">
+      </div>
+      <div class="dis-content">
+        <p class="dis-text">
+          Without support from
+          government agencies,
+          industry, and the general
+          public, there is not
+          enough funding to sustain
+          neuroscience research.
+          Without research, there are
+          no treatments. And without
+          treatments, there are no
+          cures. This initiative
+          raises awareness of the
+          American Academy of
+          Neurology's support of
+          researchers and access to
+          practitioners to conduct
+          trials and trial recruitment.
+        </p>
+        <p class="dis-st">
+          Jackson
+        </p>
+      </div>
+    </article>
+
+    <article class="dis">
+      <div class="dis-icon">
+        <img class="dis-img" src="./DiscussionImage/brain.png" alt="brain logo" width="30">
+      </div>
+      <div class="dis-content">
+        <p class="dis-text">
+          Neuroscience is hard
+        </p>
+        <p class="dis-st">
+          Justin
+        </p>
+      </div>
+    </article>
+
+  </main>
+</body>
+
+</html>
