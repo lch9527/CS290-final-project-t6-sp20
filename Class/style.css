@@ -1,0 +1,300 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fcf8f5;
+}
+
+.title{
+    background-color: #fccb96;
+    height: 80px;
+    color: #130d4c;
+} 
+
+.title h1{
+    margin: 0px;
+    line-height: 80px;
+    padding-left: 40px;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    float: left;
+}
+
+.medialist{
+    float: right;
+    list-style-type: none;
+    margin: 0px;
+    padding-right: 20px;
+}
+
+.medialist li{
+    float: left;
+    line-height: 80px;
+    padding-right: 30px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header {
+    background-color: #fcf8f5;
+    height: 80px;
+    margin: 0px;
+    box-shadow: 0px 2px 20px #888888;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.header .navlist{
+    list-style-type: none;
+    margin: 0px;
+    padding-left: 40px;
+}
+
+.navlist li{
+    display: inline-block;
+    line-height: 80px;
+    padding-right: 40px;
+    font-family: Georgia, serif;
+}
+
+.navlist .active a{
+    color: #fccb96;
+}
+
+.navlist a{
+    color: #130d4c;
+}
+
+.navlist a:hover{
+    color: #fccb96;
+}
+
+.navbar-search {
+    float: right;
+    margin-right: 20px;
+    padding: 0;
+    line-height: 80px;
+}
+
+#search-input,
+#search-button{
+    border: none;
+    background-color: #fcf8f5;
+    color: #130d4c;
+}
+
+#search-input{
+    border-bottom: 1px solid #130d4c;
+}
+
+#search-input ::placeholder{
+    color: #130d4c;
+}
+
+#search-button:hover{
+    color: #fccb96;
+}
+
+#search-input:focus{
+    outline: none;
+}
+
+.break{
+    height: 30px;
+}
+
+h3{
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    padding-left: 40px;
+}
+
+main{
+    margin: 50px 100px;
+}
+
+.classes img{
+    width: 370px;
+    box-shadow: 0px 0px 10px #888888;
+}
+
+.class-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 0 1 28%;
+    margin: 20px;
+    padding: 20px;
+}
+.web-name{
+    text-align: left;
+}
+
+/*************class page style HERE***************************/
+.class-img {
+    display: flex;
+    flex: 0 1 28%;
+}
+
+.classes { /*discussion box*/
+    margin: 5px;
+    padding: 20px;
+    border: 5px solid #fccb96;
+    border-radius: 10px;
+    background-color: #fcf8f5;
+}
+
+.class { /*text content*/
+    background-color: #fcf8f5;
+    text-align: left;
+}
+
+.class-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: left;
+}
+.class-univ {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.class-discription{
+    padding-right: 50px;
+}
+
+/*************class page style OVER***************************/
+
+.one {
+    border-right: 1px #130d4c solid;
+}
+
+.contact {
+    background-color: #130d4c;
+    height: 300px;
+    display: flex;
+    padding: 70px 0px;
+}
+
+.Part {
+    width: 100%;
+    color: white;
+    padding-left: 100px;
+}
+
+.firstPart {
+    border-right: 1px #fccb96 solid;
+}
+
+.input_part {
+    display: inline-block;
+    background-color: #fccb96;
+}
+
+    .input_part #Email {
+        background-color: #130d4c;
+        padding-left: 15px;
+        font-size: 15px;
+        height: 35px;
+        width: 200px;
+        border: 1px #fccb96 solid;
+        color: white;
+        margin-right: 0px;
+    }
+
+::placeholder {
+    color: white;
+}
+
+.input_part .subButton {
+    margin-left: 0px;
+    height: 37px;
+    width: 150px;
+    font-size: 20px;
+    border: 1px #fccb96 solid;
+    background-color: #fccb96;
+    color: #130d4c;
+}
+
+.firstPart .medialist2 {
+    position: relative;
+    list-style-type: none;
+    right: 40px;
+}
+
+.medialist2 li {
+    float: left;
+    line-height: 80px;
+    padding-right: 30px;
+}
+
+.secondPart input {
+    background-color: #130d4c;
+    border: none;
+    height: 70px;
+}
+
+.secondPart #name,
+.secondPart #phone_number {
+    border-bottom: 1px #fccb96 solid;
+    width: 250px;
+    margin-right: 20px;
+    color: white;
+}
+
+.secondPart #subject,
+.secondPart #question {
+    border-bottom: 1px #fccb96 solid;
+    width: 530px;
+    color: white;
+}
+
+@media only screen and (min-width: 800px) { /*TABLET ========================*/
+    h1 {
+        font-size: 250%;
+    }
+
+    h2 {
+        font-size: 200%;
+    }
+
+    h3 {
+        font-size: 175%;
+    }
+
+    h4 {
+        font-size: 150%;
+    }
+
+    h5 {
+        font-size: 125%;
+    }
+
+    h6 {
+        font-size: 100%;
+    }
+
+    #crtdis {
+        font-size: 50px;
+    }
+
+    .discussion {
+        font-size: 125%;
+    }
+
+    .dis {
+        width: 400px;
+    }
+
+    .class-img {
+        width: 400px;
+        float: right;
+    }
+    .class-discription {
+        width: 70%;
+    }
+}
