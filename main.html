@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Neuro Zoom</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" crossorigin="anonymous">
+  <script src="main.js" charset="utf-8" defer></script>
+  <link rel="stylesheet" href="style.css" type="text/css">
+
+</head>
+
+<body>
+
+  <div class="header" id="myHeader">
+    <ul class="navlist">
+      <li class="navitem navlink active"><a href="main.html">Home</a></li>
+      <li class="navitem navlink"><a href="Class/class.html">Classes</a></li>
+      <li class="navitem navlink"><a href="Discussion/discussion.html">Discussion</a></li>
+      <li class="navitem navlink"><a href="Article/article.html">Article</a></li>
+    </ul>
+
+    <ul class="medialist">
+      <li class="media"><i class="fab fa-weixin"></i></li>
+      <li class="media"><i class="fab fa-weibo"></i></li>
+      <li class="media"><i class="fab fa-facebook-f"></i></li>
+    </ul>
+  </div>
+
+  <div class="title">
+    <h1>Neuro Zoom</h1>
+  </div>
+
+  <div class="container">
+    <img class="picture" src="./HomeImage/home-1.jpg">
+    <img class="picture" src="./HomeImage/home-2.jpg" style="display:none">
+    <img class="picture" src="./HomeImage/home-3.jpg" style="display:none">
+    <img class="picture" src="./HomeImage/home-4.jpg" style="display:none">
+    <div class="break1"></div>
+
+    <div class="picContainer">
+      <div class="pic">
+        <img class="pict" src="./HomeImage/home-1.jpg" onclick="current(1)">
+      </div>
+      <div class="pic">
+        <img class="pict" src="./HomeImage/home-2.jpg" onclick="current(2)">
+      </div>
+      <div class="pic">
+        <img class="pict" src="./HomeImage/home-3.jpg" onclick="current(3)">
+      </div>
+      <div class="pic">
+        <img class="pict" src="./HomeImage/home-4.jpg" onclick="current(4)">
+      </div>
+    </div>
+  </div>
+
+  <div class="break"></div>
+
+  <div class="about-us">
+    <h1>About Neuro Zoom</h1>
+    <hr>
+
+    <p>Neuroscience is an interdisciplinary science that works closely with other disciplines, such as mathematics,
+      linguistics, engineering, computer science, chemistry, philosophy, psychology, and medicine.
+
+    </p>
+  </div>
+
+  <div class="break"></div>
+
+  <div class="classes">
+    <h1>The Most Popolar Classes</h1>
+    <hr>
+    <p> Learn how the nervous
+      system produces behavior,
+      how we use our brain every
+      day, and how neuroscience can
+      explain the common problems
+      afflicting people today.</p>
+  </div>
+
+  <div class="classContainer">
+    <div class="block one">
+      <a href="https://www.coursera.org/courses?query=neuroscience" target="_blank"><img src="./HomeImage/brain-img.jpg" alt="Coursers"></a>
+      <h2>Coursers</h2>
+    </div>
+    <div class="block one">
+      <a href="https://www.edx.org/search?q=neuroscience&utm_campaign=1661780377&utm_medium=62996189174&utm_term=%20edx" target="_blank"><img src="./HomeImage/brain-scan.jpg" alt="edX"></a>
+      <h2>edX</h2>
+    </div>
+    <div class="block">
+      <a href="https://www.udemy.com/topic/neuroscience/" target="_blank"><img src="./HomeImage/neuroscience-banner.jpg" alt="Udemy"></a>
+      <h2>Udemy</h2>
+    </div>
+  </div>
+
+
+
+  <div class="break"></div>
+
+  <div class="contact">
+    <div class="Part firstPart">
+      <h1>Contact Us</h1>
+      <p>(541)-666-6666</p>
+      <p>hero@oregonstate.edu</p>
+      <br>
+      <h2>Never Miss</h2>
+      <div class="input_part">
+        <input type="email" id="Email" placeholder="Email*">
+        <input type="submit" value="Subscribe" class="subButton">
+      </div>
+      <ul class="medialist2">
+        <li class="media"><i class="fab fa-weixin"></i></li>
+        <li class="media"><i class="fab fa-weibo"></i></li>
+        <li class="media"><i class="fab fa-facebook-f"></i></li>
+      </ul>
+    </div>
+
+
+    <div class="Part secondPart">
+      <h2>Have any question?</h2>
+      <div class="pearonal">
+        <input type="text" id='name' placeholder="Name">
+        <input type="number" id='phone_number' placeholder="Phone Numebr*">
+      </div>
+      <input typt="text" id="subject" placeholder="Subject"><br>
+      <input typt="text" id="question" placeholder="Type your question here...">
+    </div>
+
+  </div>
+
+</body>
+
+</html>
