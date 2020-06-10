@@ -28,7 +28,7 @@ app.get('*', function(req, res, next){
     res.status(200);
     res.send("<html><body><h1>404</h><h2>Page not found</h></body></html>"); 
     */
-   res.status(200).sendFile(__dirname + "/index.html");
+   res.status(200).sendFile(__dirname + "/main.html");
 })
 
 
