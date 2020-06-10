@@ -1,41 +1,38 @@
-var path = require('path');
 var express = require('express');
-
 var app = express();
-var port = process.env.PORT || 3000;
 
-app.get('/', function(req, res, next) {
+app.use(express.static('public'));
 
-	res.status(22).sendfile(__dirname + "main.html");
-
+app.get('/', function(req, res, next){
+    res.status(200).sendFile(__dirname + "/public/main.html");
 });
 
-app.get('/main', function(req, res, next) {
+app.get('/Home', function(req, res, next){
+    res.status(200).sendFile(__dirname + "/public/main.html");
+})
 
-	res.status(200).sendFile(__dirname + "main.html");
-
+app.get('/Class/:Class', function(req, res, next){
+    res.status(200).sendFile(__dirname + "/Class/Class.html");
 });
 
-app.get('/discussion', function(req, res, next) {
+app.get('/Discussion/:Discussion', function(req, res, next){
+    res.status(200).sendFile(__dirname + "/Discussion/Discussion.html");
+})
 
-	res.status(200).sendFile(__dirname + "discussion.html");
+app.get('/Article', function(req, res, next){
+    res.status(200).sendFile(__dirname + "/Article/Article.html");
+})
 
-});
+app.get('*', function(req, res, next){
+    /*
+    res.status(200);
+    res.send("<html><body><h1>404</h><h2>Page not found</h></body></html>"); 
+    */
+   res.status(200).sendFile(__dirname + "/index.html");
+})
 
-app.get('/classes', function(req, res, next) {
 
-	res.status(200).sendFile(__dirname + "classes.html");
 
-});
-
-app.get ('/articles', function(req, res, next) {
-
-	res.status(200).sendFile(__dirname + "/articles.html");
-
-});
-
-app.get ('*', function(req, res, next) {
-
-	res.status(404).sendFile(__dirname + "");
-
+app.listen(8000, function () {
+  console.log("== Server is listening on port !!!");
 });
